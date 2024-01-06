@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  musthafa:
+    build: .
+    image: musthafa:hacking
+    hostname: Hacking
+    tty: true
+    volumes:
+      - home_hacking:/home/
+    ports:
+      - 3333:22
+
+    
+volumes:
+    home_hacking:
